@@ -292,11 +292,38 @@ i.info__icon{
     color: #757575;
     line-height: 28px;
 }
-
-
-
-
 /* End info styles*/
+
+
+/*Clients styles*/
+.clients{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 25px 0;
+    margin: 60px 0 25px 0;
+    position: relative;
+}
+.clients__title{
+    position: absolute;
+    top:-10px;
+    left:5%;   
+    margin: 0;
+    background: #fff;
+    width: 150px;
+    text-align: center;
+    color:#343434;
+    font-family: "Tahoma";
+    text-transform: uppercase;
+    font-size: 17px;
+}    
+
+
+
+/*End clients styles*/
+
 
 @media(max-width:1000px){
     .container{
@@ -328,7 +355,6 @@ i.info__icon{
 .info__about, 
 .info__news{
     width: 50%;
-
 }
 .info__about{
     border-right:none;
@@ -336,6 +362,9 @@ i.info__icon{
 }
 .info__contacts{
     margin-top: 15px;
+}
+.clients{
+    margin: 15px 0;
 }
 }
 @media(max-width:700px){
