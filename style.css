@@ -56,10 +56,15 @@ li{
    height: 55px;
    width: 55px;
 }
-.logo_size_little{
-        width: 210px;
-        height: 65px;
-        font-size: 34px;
+.logo_size_small{
+        width: 180px;
+        height: 35px;
+        font-size: 26px;
+}
+.logo_size_small::after,
+.logo_size_small::before{
+   height: 35px;
+   width: 35px;
 }
 /*End shared styles*/
 
@@ -320,11 +325,39 @@ i.info__icon{
     font-size: 17px;
 }    
 
-
-
 /*End clients styles*/
 
+/*Footer styles*/
 
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.footer__menu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+}
+.footer__link {
+    padding: 0 15px;
+    text-transform: uppercase;
+    border-right: 1px solid #ccc;
+}
+.footer__menu li:last-child .footer__link{
+    border:none;
+}
+.footer__copy, .footer__link{
+    color: #535353;
+
+}
+
+
+
+/*End footer styles*/
 @media(max-width:1000px){
     .container{
         padding: 15px;
